@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <title>page2</title>
+  <style media="screen">
+    h1{
+      font-size: 45px;
+      text-align: right;
+      border-bottom:1px solid gray;
+      margin:0px
+      padding:20px;
+    }
+    #grid ol{
+      border-right: 1px solid gray;
+      width: 130px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+    #img2{
+      margin:0px;
+      width: 80px;
+    }
+    #article{
+      padding:20px;
+      margin:0px;
+      width: 500px;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>위대한 알고리즘의 조건</h1>
+    <input type="button" style="width:25pt; value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value==='night'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value='day';
+    } else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value='night';
+    }">
+    <div id="grid">
+      <ol>
+        <li><a href="index.html">알고리즘이란?</a></li>
+        <li><a href="page2.html">위대한 알고리즘의 조건</a></li>
+        <li><a href="page3.html">검색엔진</a></li>
+        <li><a href="page4.html">페이지랭크</a></li>
+      </ol>
+
+      <div id="img2">
+       <img src="circle.png" height="500" width="500">
+      </div>
+      <div id="article">
+        가장 중요한 기준은 <strong>일반 컴퓨터 사용자가 날마다 사용하는 알고리즘이어야 한다는 점</strong>이다.
+        두번쨰로 중요한 것은 <strong>알고리즘이 구체적이고 실질적인 것을 다루어야 한다는 것</strong>이다. 세번째 기준은 <strong>알고리즘이
+        CPU, 모니터, 네트워크 등 컴퓨터 하드웨어에 중점을 둔 기술이나 인터넷같은 인프라스트럭쳐 설계가 아닌 컴퓨터과학 이론에
+        우선적으로 연관돼야 한다는 점</strong>이다. 이는 컴퓨터과학에 대한 대중의 인식이 주로 소프트웨어나 하드웨어 설게에
+        국한되어 있기 때문이다.
+      </div>
+    </div>
+  </body>
+</html>

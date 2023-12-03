@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <title>page1</title>
+  <style media="screen">
+    h1{
+      font-size: 45px;
+      text-align: right;
+      border-bottom:1px solid gray;
+      margin:0px
+      padding:20px;
+    }
+    #grid ol{
+      border-right: 1px solid gray;
+      width: 130px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+    #img1{
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      -webkit-transform: scale(1);
+    }
+    #article{
+      padding:20px;
+      margin:0px;
+      width: 500px;
+    }
+    .move_scale {
+        -webkit-animation-name: animation_scale;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 0.5s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: both
+    }
+    @-webkit-keyframes animation_scale {
+        0% {
+            -webkit-transform: translateX(100px) translateY(100px) scale(0.25);
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translateX(0px) translateY(0px) scale(1);
+        }
+    }
+  </style>
+  </head>
+  <body>
+    <h1>알고리즘이란?</h1>
+    <input type="button" style="width:25pt; value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value==='night'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value='day';
+    } else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value='night';
+    }">
+    <div id="grid">
+      <ol>
+        <li><a href="page1.html">알고리즘이란?</a></li>
+        <li><a href="page2.html">위대한 알고리즘의 조건</a></li>
+        <li><a href="page3.html">검색엔진</a></li>
+        <li><a href="page4.html">페이지랭크</a></li>
+      </ol>
+
+      <div id="img1">
+       <img class="move_scale" src="aa.jpg" height="500" width="700">
+      </div>
+      <div id="article">
+        컴퓨터 과학자들은 자신들의 중대한 아이디어의 상당수를 <strong>알고리즘</strong>이라고 표현한다.
+        그렇다면 아이디어와 알고리즘 사이의 어떤 차이가 있을까? 간단하게 말하자면 알고리즘은
+        문제를 푸는 데 필요한 단계의 순서를 명확히 명시하는 구체적인 계산법이다. 예를 들어
+        어린시절 학교에서 배운 두개의 큰 수를 더하는 알고리즘이 있다. '우선 마지막 자리의 두 숫자를 더해 결과의 마지막 자릿수를 적고
+        다른 자릿수는 왼쪽으로 한칸 올려라. 둘째, 다음칸에 있는 자릿수를 더하고 이전 칸에서 옮긴 수를 더하라...'
+        이처럼 알고리즘은 <strong>절대적으로 정확해야하며 어떤 인간적 직관이나 추측을 요하지 않는 정확하고 기계적인 계산법</strong>이다.
+      </div>
+    </div>
+  </body>
+</html>

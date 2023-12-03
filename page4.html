@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <title>page4</title>
+  <style media="screen">
+    h1{
+      font-size: 45px;
+      text-align: right;
+      border-bottom:1px solid gray;
+      margin:0px
+      padding:20px;
+    }
+    #grid ol{
+      border-right: 1px solid gray;
+      width: 130px;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 1fr 3fr 1fr;
+    }
+    #img4{
+      margin:0px;
+      width: 80px;
+    }
+    #article{
+      padding:20px;
+      margin:0px;
+      width: 500px;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>페이지랭크</h1>
+    <input type="button" style="width:25pt; value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value==='night'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value='day';
+    } else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value='night';
+    }">
+    <div id="grid">
+      <ol>
+        <li><a href="index.html">알고리즘이란?</a></li>
+        <li><a href="page2.html">위대한 알고리즘의 조건</a></li>
+        <li><a href="page3.html">검색엔진</a></li>
+        <li><a href="page4.html">페이지랭크</a></li>
+      </ol>
+
+      <div id="img4">
+       <img src="img4.png" height="400" width="500">
+      </div>
+      <div id="article">
+        페이지랭크는 하이퍼 링크를 이용해 검색결과에 순위를 매겨 사용자에게 제시해주는 것이다.
+        예를 들어 스크램블 에그 레시피를 검색했을떄 두개의 검색결과가 있다고 가정해보다. 하나는 <strong>어니의
+        스크램블 에그 레시피</strong>이고 다른 하나는 <strong>버트의 스크램블 에그 레시피</strong>이다. 이때 어니의 레시피 웹페이지로
+        이어지는 하이퍼링크가 존재하는 웹페이지가 2개, 버트의 레시피 웹페이지로 이어지는 하이퍼링크가 존재하는
+        페이지가 1개라면 어니의 웹페이지의 순위를 더 높게 측정해 우선적으로 제시해주는 식이라고 볼 수 있다.
+        수만개의 검색결과 중 우리가 원하는 검색결과를 찾을 수 있는데는 이 페이지랭크가 큰 역할을 하고 있다.
+      </div>
+    </div>
+  </body>
+</html>
